@@ -97,7 +97,6 @@ img{
 }
 
 /*MENU*/
-
 .navegacion {
     display: flex;
     background-color: var(--menu);
@@ -105,13 +104,13 @@ img{
     cursor: pointer;
 }
 
-.navegacion__enlace, .navegacion__menu {
+.navegacion__enlace {
     position: relative;
     display: inline-block;
-
 }
 
-.navegacion__enlace > a, .navegacion__menu > a {
+
+.navegacion__enlace > a{
     color: white;
     padding: 14px 20px;
     text-decoration: none;
@@ -130,7 +129,23 @@ img{
     z-index: 1;
     border-radius: 2rem;
 }
-.submenu a {
+.submenu__info {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.71);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 2rem;
+    right: 0px;
+}
+.submenu a{
+    color: var(--primario);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+.submenu__info a{
     color: var(--primario);
     padding: 12px 16px;
     text-decoration: none;
@@ -153,38 +168,48 @@ img{
     border-radius:  0 0 2rem 2rem;
 }
 
+.submenu__info .uno:hover {
+    background-color: #784d3cc2;
+    color: var(--blanco);
+    border-radius: 2rem 2rem 0 0;
+}
+.submenu__info .dos:hover {
+    background-color: #784d3cc2;
+    color: var(--blanco);
+}
+.submenu__info .tres:hover {
+    background-color: #784d3cc2;
+    color: var(--blanco);
+    border-radius:  0 0 2rem 2rem;
+}
+
 .navegacion__enlace:hover .submenu {
     display: block;
 }
-.navegacion__menu:hover .submenu {
+.navegacion__enlace:hover .submenu__info {
     display: block;
 }
-
-
-/*MENU RESPONSIVE*/
-/* Estilos específicos para tabletas y smartphones */
+/*MENU FOOTER*/
 @media (min-width: 768px){
-    .navegacion__menu {
-        position:static;
-        display: inline-block;
-    
-    }
-    
-    .navegacion__menu > a {
-        color: white;
-        padding: 14px 20px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    .navegacion__menu__enlace > a:hover {
-        border-radius: 2rem;
+    .navegacion__footer{
+        display: flex;
+        gap: 2rem;
     }
 }
-
-
+.enlace__footer{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
 /*FIN MENU*/
 
+
+@media (max-width: 768px){
+    .navegacion .title{
+        font-size: 1rem;
+    }
+}
 
 
 @media (min-width: 768px){
