@@ -6,6 +6,7 @@
     --gris: #e1e1e1;
     --blanco: #fff;
     --negro: #000;
+    --menu: #784d3c96
 }
 html{
     box-sizing: border-box;
@@ -94,18 +95,97 @@ img{
 .logo__bold{
     font-weight: 700;
 }
-@media (min-width: 768px){
-    .navegacion{
-        display: flex;
-        gap: 2rem;
-    }
+
+/*MENU*/
+
+.navegacion {
+    display: flex;
+    background-color: var(--menu);
+    border-radius: 2rem;
+    cursor: pointer;
 }
-.navegacion__enlace{
+
+.navegacion__enlace, .navegacion__menu {
+    position: relative;
+    display: inline-block;
+
+}
+
+.navegacion__enlace > a, .navegacion__menu > a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
     display: block;
-    text-align: center;
-    font-size: 1.8rem;
+}
+
+.navegacion__enlace > a:hover {
+    border-radius: 2rem;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.71);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 2rem;
+}
+.submenu a {
+    color: var(--primario);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.submenu .uno:hover {
+    background-color: #784d3cc2;
+    color: var(--blanco);
+    border-radius: 2rem 2rem 0 0;
+}
+.submenu .dos:hover {
+    background-color: #784d3cc2;
     color: var(--blanco);
 }
+.submenu .tres:hover {
+    background-color: #784d3cc2;
+    color: var(--blanco);
+    border-radius:  0 0 2rem 2rem;
+}
+
+.navegacion__enlace:hover .submenu {
+    display: block;
+}
+.navegacion__menu:hover .submenu {
+    display: block;
+}
+
+
+/*MENU RESPONSIVE*/
+/* Estilos específicos para tabletas y smartphones */
+@media (min-width: 768px){
+    .navegacion__menu {
+        position:static;
+        display: inline-block;
+    
+    }
+    
+    .navegacion__menu > a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .navegacion__menu__enlace > a:hover {
+        border-radius: 2rem;
+    }
+}
+
+
+/*FIN MENU*/
+
+
 
 @media (min-width: 768px){
     .contenido-principal{
