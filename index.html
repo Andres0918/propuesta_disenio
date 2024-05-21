@@ -68,15 +68,30 @@
     </header>
     <div class="contenedor contenido-principal">
         <main class="blog">
-            <h3>Este es un blog</h3>
+            <h3>Descubre!</h3>
 
             <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source srcset="img/blog1.webp" type="imagen/webp">
-                        <img loading="lazy" src="img/blog1.jpg" alt="entrada imagen">
-                    </picture>
-                    
+
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/libro1.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/libro2.webp" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/libro3.webp" alt="Imagen 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/libro4.jpg" alt="Imagen 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/libro5.webp" alt="Imagen 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+                    <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
                 </div>
 
                 <div class="entrada__contenido">
@@ -92,45 +107,40 @@
                 </div>
 
             </article>
+
+
+
+
+
             <article class="entrada">
                 <div class="entrada__imagen">
                     <picture>
-                        <source srcset="img/blog2.webp" type="imagen/webp">
-                        <img loading="lazy" src="img/blog2.jpg" alt="entrada imagen">
+                        <source srcset="img/escritor.webp" type="imagen/webp">
+                        <img loading="lazy" src="img/escritor.jpg" alt="entrada imagen">
                     </picture>
                 </div>
 
                 <div class="entrada__contenido">
-                    <h4 class="no-margin">3 Deliciosas Recetas de Cafe</h4>
-                    <p>Nunc eget dolor feugiat, elementum nisi in, accumsan nisl. 
-                        Mauris tincidunt metus quis congue lacinia. Nullam tortor nunc, 
-                        blandit nec tempor vitae, scelerisque eu neque. Nunc eu dapibus risus,
-                        at sollicitudin est. Aenean magna sapien, fringilla in mauris eu, semper 
-                        gravida turpis. Duis purus quam, bibendum ac erat eu, efficitur rhoncus ipsum. 
-                        Vestibulum sed purus eu risus commodo vulputate. Ut vulputate mattis turpis 
-                        convallis ullamcorper. Mauris facilisis quam quis sapien facilisis vestibulum.</p>
-                        <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <h4 class="no-margin">Sthephen King</h4>
+                    <p>Stephen King es un autor estadounidense conocido por sus obras de terror, suspenso y ciencia ficción. Nació el 21 de septiembre de 1947 en Portland, Maine. Desde una edad temprana, King mostró interés por la escritura, vendiendo historias a sus amigos y participando en la revista de su escuela secundaria.
+
+                    Después de graduarse de la Universidad de Maine, King trabajó como profesor mientras continuaba escribiendo en su tiempo libre. Su primera novela publicada, "Carrie", se convirtió en un éxito instantáneo en 1974, lo que marcó el comienzo de una prolífica carrera como escritor.</p>
+                        <a href="entrada.html" class="boton boton--primario">Más Información</a>
                 </div>
 
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
                     <picture>
-                        <source srcset="img/blog3.webp" type="imagen/webp">
-                        <img loading="lazy" src="img/blog3.jpg" alt="entrada imagen">
+                        <source srcset="img/imagen.webp" type="imagen/webp">
+                        <img loading="lazy" src="img/mejorLibro.png" alt="entrada imagen">
                     </picture>
                 </div>
 
                 <div class="entrada__contenido">
-                    <h4 class="no-margin">Beneficios del Cafe</h4>
-                    <p>Nunc eget dolor feugiat, elementum nisi in, accumsan nisl. 
-                        Mauris tincidunt metus quis congue lacinia. Nullam tortor nunc, 
-                        blandit nec tempor vitae, scelerisque eu neque. Nunc eu dapibus risus,
-                        at sollicitudin est. Aenean magna sapien, fringilla in mauris eu, semper 
-                        gravida turpis. Duis purus quam, bibendum ac erat eu, efficitur rhoncus ipsum. 
-                        Vestibulum sed purus eu risus commodo vulputate. Ut vulputate mattis turpis 
-                        convallis ullamcorper. Mauris facilisis quam quis sapien facilisis vestibulum.</p>
-                        <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <h4 class="no-margin">Las Hijas de la Criada -> Premio Planeta 2023</h4>
+                    <p>"Las hijas de la criada" de Sonsoles Ónega, ganadora del Premio Planeta 2023, es una novela que combina elementos históricos y familiares en una trama emocionante y conmovedora. La historia se sitúa en Galicia a principios del siglo XX y sigue las vidas de Clara y Catalina, nacidas en el pazo de Espíritu Santo. La vida de estas hermanas se ve profundamente afectada por una venganza que altera su destino y el de su familia, los Valdés Lazariego.</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer Más</a>
                 </div>
 
             </article>
@@ -177,5 +187,6 @@
         </div>
     </footer>
     <script src="./javascript/acciones.js"></script>
+    <script src="./javascript/carrusel.js"></script>
 </body>
 </html>
