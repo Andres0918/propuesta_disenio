@@ -220,6 +220,9 @@ img{
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
 }
+.entrada .carousel{
+    text-align: center;
+}
 
 
 /*CARRUSEL*/
@@ -396,7 +399,7 @@ img{
 /*Formulario*/
 .formulario{
     background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
+    margin: auto;
     width: 95%;
     padding: 5rem;
 }
